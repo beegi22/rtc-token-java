@@ -29,11 +29,10 @@ public class Utils {
     }
 
     public static boolean isUUID(String uuid) {
-        if (uuid.length() != 32) {
+        if (uuid.length() != 22) {
             return false;
         }
-
-        return uuid.matches("\\p{XDigit}+");
+        return true;
     }
 
     public static byte[] compress(byte[] data) {
